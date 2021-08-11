@@ -27,9 +27,11 @@ namespace app2
         //        Console.WriteLine("{0} * {1} = {2}", x , input , multiple ); 
         //    }
             Console.WriteLine("Enter Your Input");
-            int input = Convert.ToInt32(Console.ReadLine());  
+            int input = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n All primae numbers within your input value \n");
             for (int x = 2; x < input; x++)
             {
+         
                 int isPrime = 0;
                 for (int y = 1; y < x; y++)
                 {
@@ -40,10 +42,8 @@ namespace app2
                 }
                 if(isPrime != 2)
                 Console.WriteLine(x);
-
-                isPrime = 0;
             }
-        Console.ReadKey();
+            Console.ReadKey();
         }  
     }
 }
