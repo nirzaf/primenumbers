@@ -9,9 +9,16 @@ namespace app2
            
             Console.Write("input your number : ");
             MultiplicationTable mt = new();
-            mt.input = Convert.ToInt32(Console.ReadLine());
+
+            mt.input = Convert.ToInt32(Console.ReadLine());         
             mt.PrintNumbers();
-            Console.ReadLine();
+            MultiplicationTable mt2 = new();
+
+            mt2.input = mt.Calculate();
+            Console.WriteLine("Calculated value {0}", mt.Calculate());
+            mt2.PrintNumbers();
+
+            //Console.ReadLine();
         }
 
         public class MultiplicationTable
@@ -26,6 +33,11 @@ namespace app2
                     multiple = x * input;
                     Console.WriteLine("{0} * {1} = {2}", x, input, multiple);
                 }
+            }
+
+            public int Calculate()
+            {
+                return input * 5;
             }
         }
 
