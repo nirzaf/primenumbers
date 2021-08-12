@@ -12,7 +12,7 @@ namespace app2
             for (int x = 1; x <= 10; x++)
             {
                 multiple = x * input1;
-                Console.WriteLine("{0} * {1} = {2}", x, input, multiple);
+                Console.WriteLine("{0} * {1} = {2}", x, input1, multiple);
             }
         }  
     }
