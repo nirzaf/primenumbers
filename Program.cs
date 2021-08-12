@@ -14,6 +14,7 @@ namespace app2
                 multiple = x * input1;
                 Console.WriteLine("{0} * {1} = {2}", x, input1, multiple);
             }
+            Console.ReadLine();
         }  
     }
 }
