@@ -6,14 +6,7 @@ namespace app2
     {
         static void Main(string[] args)
         {
-            /* Console.Write("Enter Your Input : ");
-            int input = Convert.ToInt32(Console.ReadLine());
-            for(int x = 1; x <= input; x++)
-            {
-                int square = x * x;
-                Console.WriteLine("The Cube of {0} is {1}" , x, square);
-            } */
-
+           
             Console.Write("Enter Your Input : ");
             int input1 = Convert.ToInt32(Console.ReadLine());
             for ( int x = 1; x <= input1; x++)
