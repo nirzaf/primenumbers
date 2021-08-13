@@ -13,14 +13,16 @@ namespace app2
             int sum = 0;
             for (int x = 1; x <= y; x++)
             {
-               if(x % 2 == 1)
+                 if (x % 2 == 1)
                 {
-                    x += sum;
-                    Console.Write(x + " ");
+                   Console.Write(x + " ");
+                    sum += x;
                 }
-              
+                
+                
             }
-            Console.WriteLine("The Sum of Odd Numbers are : {0}", sum);
+            Console.WriteLine("\nThe Sum of Odd Numbers are : {0}", sum);
+
         }   
     }
 }
