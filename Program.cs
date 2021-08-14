@@ -6,33 +6,20 @@ namespace app2
     {
         static void Main(string[] args)
         {
-
-            /*  Console.Write("Enter the No.Of Term : ");
-              int input = Convert.ToInt32(Console.ReadLine());
-              int square;
-              int sum = 0;
-              Console.Write("The Square Numbers upto {0} Terms ", input + " are :");
-              for ( int x = 1; x <= input; x++)
-              {
-                  square = x * x;
-                  Console.Write(square + " ");
-                  sum += square;
-
-              }
-              Console.WriteLine("\nThe Sum of Square Numbers upto {0}", input +" Terms are :" + sum); */
-
-            Console.Write("Enter the Input : ");
-            int input = Convert.ToInt32(Console.ReadLine());
-            Console.Write("The Square Numbers in {0} ", input + " are :");
-             int square;
-            for (int x = 1; x <= input; x++)
+            int[] intArray = new int[50];
+            string[] stringArray = new string[50];
+            int x = 5;
+            for (int i = 49; i > 0; i--)
             {
-                square = x * x;
-                if(square < input)
-                Console.Write(square + " ");
-
-                       
+                intArray[i]= x;
+                x += 5;
             }
+
+            for(int a = 0; a<50; a++)
+            {
+                Console.Write(intArray[a] + ", ");
+            }
+           
         }  
     }
 }
