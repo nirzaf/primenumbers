@@ -7,24 +7,19 @@ namespace app2
         static void Main(string[] args)
         {
            
-            Console.Write("Enter Your Input : ");
-            int input1 = Convert.ToInt32(Console.ReadLine());
-            for ( int x = 1; x <= input1; x++)
+            Console.Write("Enter the No.Of Term : ");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int square;
+            int sum = 0;
+            Console.Write("The Square Numbers upto {0} Terms ", input + " are :");
+            for ( int x = 1; x <= input; x++)
             {
-                for (int y = 1; y <= 10; y++)
-                {
-                    int multiple = x * y;
-                    if (y != 10)
-                    {
-                      Console.Write("{0} * {1} = {2} , ", y , x , multiple);
-                    } 
-                    else
-                    {
-                     Console.Write("{0} * {1} = {2} ,\n", y , x , multiple);
-                    }
-                }    
+                square = x * x;
+                Console.Write(square + " ");
+                sum += square;
+
             }
-          
+            Console.WriteLine("\nThe Sum of Square Numbers upto {0}", input +" Terms are :" + sum);
         }  
     }
 }
