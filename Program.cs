@@ -6,14 +6,16 @@ namespace app2
     {
         static void Main(string[] args)
         {
-            
-            for(int x = 1; x <= 4; x++)
+            int number = 0;
+            for (int x = 1; x <= 4; x++)
             {
                 for(int y = 1; y <= x; y++)
                 {
-                    Console.Write(y);
+                    number++;
+                    Console.Write(number);
                    
                 }
+                Console.WriteLine();
             }
         }  
     }
