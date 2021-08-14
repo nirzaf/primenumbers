@@ -16,7 +16,7 @@ namespace app2
                 for(int y = 1; y <= x; y++)
                 {
                     // number++;
-                    y++;
+                    //number++;
                     Console.Write("*");
                     Console.Write(" ");
                 }
