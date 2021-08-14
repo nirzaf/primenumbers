@@ -8,18 +8,33 @@ namespace app2
         {
             int[] intArray = new int[50];
             string[] stringArray = new string[50];
-            int x = 5;
-            for (int i = 49; i > 0; i--)
+
+           // int[] Numbers = { 12, 22, 33, 11, 33 };
+
+
+            //int x = 5;
+            //for (int i = 49; i >= 0; i--)
+            //{
+            //    intArray[i]= x;  // intArray[49] = 5; 
+            //    x += 5;
+            //}
+
+            //for(int a = 0; a<50; a++)
+            //{
+            //    Console.WriteLine(intArray[a] + ", ");
+            //}
+
+            for (int i = 0; i <= 49; i++)
             {
-                intArray[i]= x;
-                x += 5;
+                stringArray[i] = Faker.Name.FullName();
             }
 
-            for(int a = 0; a<50; a++)
+            for (int i = 0; i < 50; i++)
             {
-                Console.Write(intArray[a] + ", ");
+                int a = i + 1;
+                Console.WriteLine( a.ToString() + ") " + stringArray[i]);
             }
-           
+
         }  
     }
 }
