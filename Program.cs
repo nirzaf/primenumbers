@@ -24,13 +24,14 @@ namespace app2
             Console.Write("Enter the Input : ");
             int input = Convert.ToInt32(Console.ReadLine());
             Console.Write("The Square Numbers in {0} ", input + " are :");
-            int square;
+             int square;
             for (int x = 1; x <= input; x++)
             {
                 square = x * x;
-                Math.Sqrt(square);
+                if(square < input)
                 Console.Write(square + " ");
 
+                       
             }
         }  
     }
