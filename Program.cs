@@ -8,16 +8,19 @@ namespace app2
         static void Main(string[] args)
         {
             Stack st = new Stack();
-
-            Books b1 = new Books();
+            Queue q1 = new Queue();
 
             for (int i = 0; i < 50; i++)
             {
-                b1.BookId = i;
-                b1.BookName = Faker.Name.Middle();
-                b1.Author = Faker.Name.First();
+                Books b1 = new Books
+                {
+                    BookId = i,
+                    BookName = Faker.Name.Middle(),
+                    Author = Faker.Name.First()
+                };
 
                 st.Push(b1);
+                q1.Enqueue(b1);
             }
 
             Console.WriteLine("Stack loaded");
