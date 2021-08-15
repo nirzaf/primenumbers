@@ -14,8 +14,14 @@ namespace app2
             for (int i = 0; i < 50; i++)
             {
                 b1.BookId = i;
-              //  b1.BookName = Faker.
+                b1.BookName = Faker.Name.Middle();
+                b1.Author = Faker.Name.First();
+
+                st.Push(b1);
             }
+
+            Console.WriteLine("Stack loaded");
+            Console.ReadLine();
 
         }  
     }
