@@ -8,7 +8,7 @@ namespace app2
         {
             int x = 10;
             Multiply(ref x);
-            Console.WriteLine(x);
+            Console.WriteLine("Reference Type Variable : {0}", x);
         }
 
         private static void Multiply(ref int a)
