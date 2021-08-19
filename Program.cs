@@ -11,7 +11,7 @@ namespace app2
             //Console.WriteLine("Reference Type Variable : {0}", x);
             int q, w;
             Deduction(out q, out w);
-            Console.WriteLine(x +"  " + w.ToString());
+            Console.WriteLine(q + "  " + w);
         }
 
         private static void Multiply(ref int a)
