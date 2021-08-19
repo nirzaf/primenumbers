@@ -6,7 +6,14 @@ namespace app2
     {
         static void Main(string[] args)
         {
-            
-        }  
+            int x = 10;
+            Multiply(ref x);
+            Console.WriteLine(x);
+        }
+
+        private static void Multiply(ref int a)
+        {
+            a *= a;
+        }
     }
 }
