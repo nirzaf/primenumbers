@@ -6,7 +6,18 @@ namespace app2
     {
         static void Main(string[] args)
         {
-            
+            int levels = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(Points(levels));
         }  
+        static int Points(int levels)
+        {
+           if(levels == 1)
+            {
+                return 1;
+            }
+            return levels + Points(levels - 1);
+        }
+       
     }
 }
