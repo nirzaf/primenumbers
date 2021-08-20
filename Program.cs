@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace app2
 {
@@ -12,9 +13,18 @@ namespace app2
         }  
         static string AlienLanguage(string input)
         {
-            char[] characterArray = input.ToCharArray();
-            Array.Reverse(characterArray);
-            return new string(characterArray);
+            //StringBuilder temp = new StringBuilder();
+            string t = "";
+            for (int i = input.Length - 1; i >= 0 ; i--)
+            {
+               t += input[i];
+            }
+
+            return t;
+
+            //char[] characterArray = input.ToCharArray();
+            //Array.Reverse(characterArray);
+            //return new string(characterArray);
 
         }
     }
