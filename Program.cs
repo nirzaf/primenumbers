@@ -14,11 +14,12 @@ namespace app2
             {
                 for(int x = i; x <= n; x++)
                 {
-                    Console.Write(" ");
+                    Console.Write("  ");
                 }    
                 for(int y = 1; y <= 2 * i - 1; y++)
                 {
-                    Console.Write("*" + " ");
+                    Console.Write("* ");
+                   
                 }
                 Console.WriteLine();
             }
