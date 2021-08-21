@@ -30,6 +30,12 @@ namespace app2
             Console.WriteLine(dt2);
             Console.WriteLine(dt3);
             Console.WriteLine(dt4);
+
+            DateTime timeSpan = new(2015, 12, 31);
+           
+            TimeSpan ts = new(25,20,55);
+            DateTime newDate = timeSpan.Add(ts);
+            Console.WriteLine(newDate);//1/1/2016 1:20:55 AM
         }  
     }
 }
