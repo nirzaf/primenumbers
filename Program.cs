@@ -18,6 +18,14 @@ namespace app2
             //assigns year, month, day, hour, min, seconds, UTC timezone
             DateTime dt4 = new DateTime(2015, 12, 31, 5, 10, 20, DateTimeKind.Utc);
 
+            DateTime dt = new DateTime(636370000000000000); 
+            var minTicks = DateTime.MinValue.Ticks;  //min value of ticks
+            var maxValue = DateTime.MaxValue.Ticks; // max value of ticks
+
+            Console.WriteLine(dt);
+            Console.WriteLine(minTicks);
+            Console.WriteLine(maxValue);
+            Console.WriteLine("       ");
             Console.WriteLine(dt1);
             Console.WriteLine(dt2);
             Console.WriteLine(dt3);
