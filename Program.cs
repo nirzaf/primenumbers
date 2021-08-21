@@ -4,7 +4,7 @@ namespace app2
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
               Demo a = new(50, 50);
               Demo b = a;
