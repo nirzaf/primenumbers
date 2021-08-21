@@ -15,9 +15,7 @@ namespace app2
             Gen<int> g2 = new();
             Gen<double> g3 = new();
             Gen<char> g4 = new();
-
             Gen<Book> g5 = new();
-
             Book b1 = new()
             {
                 BookId = 1,
