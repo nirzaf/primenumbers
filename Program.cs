@@ -7,6 +7,12 @@ namespace app2
         static void Main(string[] args)
         {
             
-        }  
+        } 
+        
+        public class Fazrin
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+        }
     }
 }
