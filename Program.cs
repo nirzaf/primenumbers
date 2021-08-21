@@ -8,5 +8,11 @@ namespace app2
         {
             
         }  
+
+        public class ZamraBanu
+        {
+            public int MyID { get; set; }
+            public string MyName { get; set; }
+        }
     }
 }
