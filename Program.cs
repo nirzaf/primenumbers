@@ -11,6 +11,7 @@ namespace app2
         
         public class Fazrin
         {
+            //Code Added
             public int Id { get; set; }
             public string Name { get; set; }
         }
