@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace app2
 {
@@ -6,25 +7,28 @@ namespace app2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Animal Sound : ");
+            Console.Write("Enter the Animal Sound : ");
             string animalSound = Console.ReadLine();
-            
-                if (animalSound == "Grr")
+            var data = animalSound.Split(' ');
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Contains("Grr"))
                 {
-                    Console.WriteLine("Lion ");
+                    Console.Write("Lion ");
                 }
-                else if (animalSound == "Rawr")
+                if (data[i].Contains("Rawr"))
                 {
-                    Console.WriteLine("Tiger ");
+                    Console.Write("Tiger ");
                 }
-                else if (animalSound == "Ssss")
+                if (data[i].Contains("Ssss"))
                 {
-                    Console.WriteLine("Snake ");
+                    Console.Write("Snake ");
                 }
-                else if (animalSound == "Chirp")
+                if (data[i].Contains("Chirp"))
                 {
-                    Console.WriteLine("Bird ");
+                    Console.Write("Bird ");
                 }
+            }
             
         } 
         
