@@ -6,11 +6,11 @@ namespace app2
     {
         class People
         {
-            private string name;
-            public string Name
+            private string name; // field
+            public string Name // property
             {
-                get { return name; }
-                set { name = value; }
+                get { return name; }  // accessor
+                set { name = value; } // accessor
             }
             private int age = 0;
             public int Age
@@ -53,7 +53,7 @@ namespace app2
             {
                 Console.WriteLine("Hi");
             }
-            public Person (string nm)
+            public Person (string nm) // constructor
             {
                 name = nm;
             }
@@ -78,8 +78,10 @@ namespace app2
             b1.Withdraw(50);
             Console.WriteLine(b1.GetBalance());
 
-            People pl1 = new People();
-            pl1.Name = "Bob";
+            People pl1 = new()
+            {
+                Name = "Bob"
+            };
             Console.WriteLine(pl1.Name);
             pl1.Age = 10;
             Console.WriteLine(pl1.Age);
